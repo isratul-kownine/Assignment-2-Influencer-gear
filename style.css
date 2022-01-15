@@ -48,6 +48,7 @@ nav a
     font-weight:600;
     padding:10px;
 }
+/* main style */
 .icon
 {
     padding-right:20px;
@@ -91,7 +92,7 @@ nav a
 }
 .influencer p
 {
-    font-size:20px;
+    font-size:18px;
     font-weight:500;
 
 
@@ -223,6 +224,7 @@ nav a
     font-size:16px;
     
 }
+/* footer style */
 footer
 {
     background-color:#0A0826;
@@ -295,9 +297,10 @@ footer a
      {
          flex-wrap:wrap;
          flex-direction:column;
-         width:100%;
+         text-align: left;
          
      }
+     
      .logo
      {
          grid-template-columns: repeat(3,1fr);
