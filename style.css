@@ -1,0 +1,317 @@
+/* ----------Header
+ style------ */
+ body
+ {
+     margin:auto;
+     align-items: center;
+     justify-content: center;
+     font-family: 'Karla', sans-serif;
+      
+ }
+     
+ .container
+ {
+     max-width:960px;
+     margin:auto;
+     background-color:white;
+ }
+
+nav
+{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom:100px;
+}
+nav h3
+{
+    margin-left:100px;
+    margin-top:50px;
+}
+nav ul
+{
+   display:flex;
+   margin-right:100px;
+   margin-top:50px;
+  
+}
+nav li
+{
+    list-style-type: none;
+    margin-right:20px;
+}
+nav a
+{
+    text-decoration:none;
+    color:black;
+    font-size:18px;
+    font-weight:600;
+    padding:10px;
+}
+.icon
+{
+    padding-right:20px;
+
+}
+
+.influencer-part
+{   
+    margin-top:20px;
+    display:flex;
+    overflow:hidden;
+    
+    
+
+}
+.influencer-part:hover
+{
+    transform:scale(1.1);
+    background-color:blanchedalmond;
+    transition:transform 2s ease-in-out;
+}
+.influencer
+{
+    width:100%;
+    padding-left:80px;
+}
+.influencer h1
+{
+    font-family: 'Karla', sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-size:25px;
+    font-weight:700;
+    
+} 
+.influencer-img
+{
+    width:50%;
+    padding-left:100px;
+    margin-left:100px;
+
+}
+.influencer p
+{
+    font-size:20px;
+    font-weight:500;
+
+
+   
+
+}
+.anchor-link
+{
+    text-decoration:none;
+    font-weight:700;
+    font-size:18px;
+    background-color:crimson;
+    color:white;
+    padding:10px 40px;
+    border-radius:10px;
+    white-space:pre-wrap;
+    
+} 
+
+.logo
+{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+
+
+.logo
+{ 
+    
+    display:grid;
+    grid-template-columns: (7,1fr);
+    padding-left: 10px ;
+    padding-right:10px;
+    padding-top:20px;
+    padding-bottom:20px;
+    border-top:1px solid rgb(180, 158, 158);
+    border-bottom:1px solid rgb(180, 158, 158);
+    margin-top:100px;
+
+}
+.heading
+{
+    font-size:25px;
+    font-weight:900;
+    text-align:center;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.popular-collection
+{ 
+    /* margin-top:100px;
+    margin-left:50px; */
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 5px; 
+    grid-row-gap: 5px;
+    justify-content:center;
+    align-items:center;
+} 
+.collection-blog
+{
+    height:450px;
+    width:300px;
+    padding:20px 20px;
+    margin-left:20px;
+    margin-bottom:30px;
+    background-color:rgb(250, 242, 242);
+    border-radius:10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 5px 5px lightgray;
+}
+.filled
+{
+    color:orange;
+}
+.not-filled
+{
+    color:rgb(231, 216, 216);
+    padding-right:10px;
+}
+.collections a
+{
+    text-decoration:none;
+    font-size:16px;
+    color:crimson;
+    float:right;
+    padding-right:30px;
+    
+}
+.collections .fas fa-arrow-right
+{
+    padding-left:20px;
+}
+.featured
+{
+    display:flex;
+    margin-top:100px;
+    width:100%;
+    
+}
+.featured-tool-detail
+
+{
+   
+    padding-right:20px;
+    justify-content: space-between;
+    align-items:center;
+    padding-left:100px;
+   
+
+}
+.featured-img
+{
+    width:600px;
+    height:500px;
+    margin-top:20px;
+    border-radius:50px;
+}
+.featured-tool-detail h2
+{
+    font-size:25px;
+    font-weight:700;
+
+}
+.featured-tool-detail p
+{
+    font-size:16px;
+    
+}
+footer
+{
+    background-color:#0A0826;
+    text-align:center;
+    color:white;
+    padding:10px;
+}
+footer a
+{
+    color:white;
+    padding-left:5px;
+} 
+/* meadia  queries for mobile */
+@media only screen and (max-width:688px) {
+    
+     nav ul
+     {
+         flex-direction:column
+     }
+     .influencer-part
+     {
+         flex-direction:column;
+         text-align:center;
+         
+     } 
+     .influencer
+     {
+         text-align:center;
+         font-size:15px;
+         width:100%;
+     }
+     .influencer-img
+     {   
+         width:100%;
+         justify-content: center;
+     }
+     .logo
+     {
+         grid-template-columns: repeat(2,1fr);
+     }
+    .popular-collection
+    {
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    .featured
+    {
+        flex-wrap:wrap;
+        justify-content: center;
+        margin-bottom:50px;
+    }
+    
+  
+} 
+/* media queries for ipad */
+@media only screen and (min-width:688px) and (max-width:992px)
+{
+    .container
+    {
+        justify-content:center;
+        align-items: center;
+    }
+    
+      nav ul li
+      {
+          flex-direction:column;
+          text-align:center;
+      }
+     .influencer-part
+     {
+         flex-wrap:wrap;
+         flex-direction:column;
+         width:100%;
+         
+     }
+     .logo
+     {
+         grid-template-columns: repeat(3,1fr);
+     }
+    .popular-collection
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .featured
+    {
+        flex-wrap:wrap;
+        justify-content: center;
+        margin-bottom:50px;
+    }
+    
+
+}
